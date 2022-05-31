@@ -43,4 +43,3 @@ function draa(){
     ctx.fillText(X,100,130);
     // ctx.strokeText(X,100,130);
 }
-

@@ -142,3 +142,52 @@ button:hover{
     color: #e20e0e;
     font-weight: bolder;
 }
+@media only screen and (max-width: 420px) {
+#two{
+    height: 50vh;
+    width: 80vw;
+}
+#hone{
+    color: hsl(108, 95%, 50%);
+    font-size: 26px;
+    /* text-shadow: 2px 2px 4px rgb(230, 103, 30); */
+    text-shadow: -1px -1px 0 rgb(238, 11, 11), 1px -1px 0 rgb(235, 252, 2), -1px 1px 0 rgb(40, 2, 255), 1px 1px 0 rgb(248, 2, 195);
+}
+#spone{
+    font-size: small;
+    text-shadow: 2px 2px 4px rgb(247, 244, 244);
+}
+small{
+    font-size: 12px;
+}
+/* NEW */
+#btnone{
+    padding: 2px 7px;
+    margin: 2px;
+}
+#draw{
+    height: 237px;
+    width: 310px;
+}
+#btntwo{
+    padding: 2px 7px;
+}
+.fix {
+    border: 2px solid rgba(255, 255, 255, 0.678);
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 5px 1px 4px 1px;
+    width: 238px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #42c8fb, #be84ac);
+    }
+#btnthree{
+    padding: 2px 7px;
+}
+#p{
+    font-size: 25px;
+    color: #15ff00;
+}
+}
