@@ -32,14 +32,22 @@ function color(){
 }
 
 //canvas
+// animation
 var canvas=document.getElementById('draw');
-canvas.addEventListener('click',draa);
+canvas.addEventListener('click',draam);
+var ctx = canvas.getContext("2d");
+function draam(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height); //to rest the canvas
+    document.getElementById('loader').style.visibility='visible';
+    setTimeout(draa,3000);
+}
 function draa(){
+    document.getElementById('loader').style.visibility='hidden';
     console.log('CANVAS is OK');
     let X = Math.floor((Math.random() * 10) + 1);
-    var ctx = canvas.getContext("2d");
     ctx.font= "150px Comic Sans MS";
     ctx.fillStyle = G;
     ctx.fillText(X,100,130);
     // ctx.strokeText(X,100,130);
 }
+setTimeout(3000);

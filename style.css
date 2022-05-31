@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     /* border: 1px solid #ff0000; */
 }
-#hone{
+
+#hone {
     color: hsl(61, 79%, 49%);
     /* position: relative;
     top: 50px;
     left: 140px; */
 }
+
 /*
 #spone{
     position: relative;
@@ -21,7 +24,7 @@
     top: 250px;
     right: 76px;
 } */
-#main{
+#main {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
@@ -29,7 +32,8 @@
     justify-content: center;
     align-items: center;
 }
-#two{
+
+#two {
     border: 2px solid #fdfdfd7a;
     border-radius: 20px;
     height: 80vh;
@@ -39,10 +43,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     font-family: 'Ubuntu', sans-serif;
 }
-#btnone{
+
+#btnone {
     border: 2px ridge rgb(0, 174, 255);
     outline: 1px solid #0051ff;
     background-color: #00e1ff;
@@ -53,12 +58,14 @@
     font-weight: 600;
     margin-right: 5px;
 }
-button:hover{
+
+button:hover {
     background-color: #00ffaa;
     color: black;
 }
+
 /* NEW */
-#modal{
+#modal {
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -67,7 +74,8 @@ button:hover{
     align-items: center;
     background-color: #bfd8bdd5;
 }
-#draw{
+
+#draw {
     border: 1px solid rgb(255, 255, 255);
     outline: 1px groove gray;
     box-shadow: 5px 6px rgb(0 0 0 / 24%);
@@ -76,7 +84,8 @@ button:hover{
     height: 237px;
     width: 408px;
 }
-#btntwo{
+
+#btntwo {
     border: 2px groove rgba(240, 12, 12, 0.774);
     outline: 1px solid #ff00dd;
     background-color: #b3ff00c7;
@@ -87,7 +96,8 @@ button:hover{
     font-weight: bolder;
     margin-left: 10px;
 }
-.fix{
+
+.fix {
     border: 2px solid rgba(255, 255, 255, 0.678);
     border-radius: 10px;
     margin-top: 12px;
@@ -98,7 +108,8 @@ button:hover{
     justify-content: center;
     background: linear-gradient(45deg, #42c8fb, #be84ac);
 }
-#btnthree{
+
+#btnthree {
     border: 2px ridge rgb(0, 174, 255);
     outline: 1px solid #0051ff;
     background-color: #00e1ff;
@@ -111,18 +122,21 @@ button:hover{
 }
 
 /* Modal */
-#modal{
-    visibility:hidden;
+#modal {
+    visibility: hidden;
 }
-#modal-con{
+
+#modal-con {
     display: flex;
     flex-direction: column;
 }
-#p{
+
+#p {
     font-size: 50px;
     color: #0051ff;
 }
-#Y{
+
+#Y {
     border: 2px groove rgba(240, 12, 12, 0.774);
     outline: 1px solid #ff00dd;
     background-color: #b3ff00c7;
@@ -132,7 +146,8 @@ button:hover{
     color: #e20e0e;
     font-weight: bolder;
 }
-#N{
+
+#N {
     border: 2px groove rgba(240, 12, 12, 0.774);
     outline: 1px solid #ff00dd;
     background-color: #b3ff00c7;
@@ -142,52 +157,97 @@ button:hover{
     color: #e20e0e;
     font-weight: bolder;
 }
-@media only screen and (max-width: 420px) {
-#two{
-    height: 50vh;
-    width: 80vw;
+/* animation */
+#loader {
+    visibility: hidden;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
 }
-#hone{
-    color: hsl(108, 95%, 50%);
-    font-size: 26px;
-    /* text-shadow: 2px 2px 4px rgb(230, 103, 30); */
-    text-shadow: -1px -1px 0 rgb(238, 11, 11), 1px -1px 0 rgb(235, 252, 2), -1px 1px 0 rgb(40, 2, 255), 1px 1px 0 rgb(248, 2, 195);
-}
-#spone{
-    font-size: small;
-    text-shadow: 2px 2px 4px rgb(247, 244, 244);
-}
-small{
-    font-size: 12px;
-}
-/* NEW */
-#btnone{
-    padding: 2px 7px;
-    margin: 2px;
-}
-#draw{
-    height: 237px;
-    width: 298px;
-}
-#btntwo{
-    padding: 2px 7px;
-}
-.fix {
-    border: 2px solid rgba(255, 255, 255, 0.678);
-    border-radius: 10px;
-    margin-top: 12px;
-    padding: 5px 1px 4px 1px;
-    width: 238px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(45deg, #42c8fb, #be84ac);
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
     }
-#btnthree{
-    padding: 2px 7px;
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
-#p{
-    font-size: 25px;
-    color: #15ff00;
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
+
+/* MEDIA */
+@media only screen and (max-width: 420px) {
+    #two {
+        height: 50vh;
+        width: 80vw;
+    }
+    #p{
+        text-shadow: -1px -1px 0 rgb(238, 11, 11), 1px -1px 0 rgb(235, 252, 2), -1px 1px 0 rgb(40, 2, 255), 1px 1px 0 rgb(248, 2, 195);
+    }
+    #hone {
+        color: hsl(108, 95%, 50%);
+        font-size: 26px;
+        /* text-shadow: 2px 2px 4px rgb(230, 103, 30); */
+        text-shadow: -1px -1px 0 rgb(238, 11, 11), 1px -1px 0 rgb(235, 252, 2), -1px 1px 0 rgb(40, 2, 255), 1px 1px 0 rgb(248, 2, 195);
+    }
+
+    #spone {
+        font-size: small;
+        text-shadow: 2px 2px 4px rgb(247, 244, 244);
+    }
+
+    small {
+        font-size: 12px;
+    }
+
+    /* NEW */
+    #btnone {
+        padding: 2px 7px;
+        margin: 2px;
+    }
+
+    #draw {
+        height: 237px;
+        width: 298px;
+    }
+
+    #btntwo {
+        padding: 2px 7px;
+    }
+
+    .fix {
+        border: 2px solid rgba(255, 255, 255, 0.678);
+        border-radius: 10px;
+        margin-top: 12px;
+        padding: 5px 1px 4px 1px;
+        width: 238px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #42c8fb, #be84ac);
+    }
+
+    #btnthree {
+        padding: 2px 7px;
+    }
+
+    #p {
+        font-size: 25px;
+        color: #15ff00;
+    }
 }
