@@ -13,20 +13,24 @@
 
 <body>
     <div id="main">
-        <div id="two"> 
+        <div id="two">
             <img id="pf" src="jerry.jpg" alt="Image">
             <div id="oval">
                 <i id="help" class="fa-solid fa-circle-info"></i>
             </div>
             <span id="name"></span>
             <h1 id="hone">WELCOME TO DICE</h1>
-            <img id="c_image"
-            src="https://img.icons8.com/external-filled-outline-wichaiwi/64/000000/external-game-gamefi-filled-outline-wichaiwi-2.png" />
+            <img id="c_image" src="https://img.icons8.com/external-filled-outline-wichaiwi/64/000000/external-game-gamefi-filled-outline-wichaiwi-2.png" />
             <span id="spone">To play the game press begin button below</span>
-            <button id="btnone" type="button" onclick="window.location='new.html';">BEGIN</button>
+            <div id="pls">
+            <button id="btnone" type="button" onclick="window.location='new.php';">BEGIN</button>
+            <button id="loginb" type="button" onclick="window.location='signup.php';">SIGN UP</button>
+            <button id="loginc" type="button" onclick="window.location='login.php';">LOGIN</button>
+            </div>
         </div>
     </div>
 </body>
 <script src="script.js"></script>
 <script src="nscript.js"></script>
+
 </html>

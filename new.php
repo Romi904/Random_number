@@ -1,3 +1,7 @@
+<?php
+session_start();
+session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +24,23 @@
     </div>
     <div id="main">
         <div id="two">
-            <!-- <span id="nname"></span> -->
+            <span id="nname">
+            <?php 
+            // to excape from error 😂😁
+            if($_SESSION['loggedin']==true)
+            {
+                echo $_SESSION['username'];
+            }
+            else{
+                ?>
+                <style>
+                    #main #two #nname{
+                        visibility: hidden;
+                    }
+                </style>
+                <?php
+            } ?>
+            </span>
             <h1 id="hone">IT'S TIME TO ROCK 💣</h1> <!-- emoji shortcut ( win + > )-->
             <small>To Play Just Click on Below Canvas👇</small>
             <canvas id="draw">

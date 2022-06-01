@@ -10,7 +10,7 @@ function exit() {
 document.getElementById('Y').addEventListener("click", quite);
 function quite() {
     // console.log('click');
-    window.location = 'index.html';
+    window.location = 'index.php';
 }
 document.getElementById('N').addEventListener('click', na);
 function na() {
@@ -20,7 +20,7 @@ function na() {
 //Reset button
 document.getElementById('btntwo').addEventListener("click", reset);
 function reset() {
-    window.location = 'new.html';
+    window.location = 'new.php';
 }
 //color
 let G = "lime";
