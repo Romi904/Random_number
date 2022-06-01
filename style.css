@@ -24,6 +24,31 @@
     top: 250px;
     right: 76px;
 } */
+
+#pf {
+    height: auto;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 82px;
+    left: 66vw;
+}
+
+#oval {
+	position: absolute;
+	top: 11vh;
+	left: 31vw;
+	border: 2px solid rgba(241, 238, 238, 0.842);
+	width: 50px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+
 #main {
     height: 100vh;
     width: 100vw;
@@ -81,6 +106,7 @@ button:hover {
     box-shadow: 5px 6px rgb(0 0 0 / 24%);
     border-radius: 29px;
     background-color: white;
+    background-image: url(https://thumbs.dreamstime.com/b/paper-texture-background-crumpled-paper-texture-background-design-paper-texture-background-crumpled-paper-texture-151402592.jpg);
     height: 237px;
     width: 408px;
 }
@@ -120,7 +146,24 @@ button:hover {
     font-weight: 600;
     margin-left: 10px;
 }
-
+#name{
+    /* border: 2px ridge rgb(255, 255, 255); */
+    position: absolute;
+    top: 14vh;
+    font-weight: bold;
+    font-size: large;
+    color: lime;
+    text-shadow: 2px 5px 18px rgb(72, 255, 0);
+}
+#nname{
+    /* border: 2px ridge rgb(255, 255, 255); */
+    position: absolute;
+    top: 14vh;
+    font-weight: bold;
+    font-size: large;
+    color: lime;
+    text-shadow: 2px 5px 18px rgb(72, 255, 0);
+}
 /* Modal */
 #modal {
     visibility: hidden;
@@ -157,6 +200,7 @@ button:hover {
     color: #e20e0e;
     font-weight: bolder;
 }
+
 /* animation */
 #loader {
     visibility: hidden;
@@ -169,6 +213,7 @@ button:hover {
     animation: spin 2s linear infinite;
     position: absolute;
 }
+
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
@@ -196,9 +241,11 @@ button:hover {
         height: 50vh;
         width: 80vw;
     }
-    #p{
+
+    #p {
         text-shadow: -1px -1px 0 rgb(238, 11, 11), 1px -1px 0 rgb(235, 252, 2), -1px 1px 0 rgb(40, 2, 255), 1px 1px 0 rgb(248, 2, 195);
     }
+
     #hone {
         color: hsl(108, 95%, 50%);
         font-size: 26px;
@@ -222,8 +269,8 @@ button:hover {
     }
 
     #draw {
-        height: 237px;
-        width: 298px;
+        height: 28vh;
+        width: 71vw;
     }
 
     #btntwo {
@@ -250,4 +297,25 @@ button:hover {
         font-size: 25px;
         color: #15ff00;
     }
+
+    #pf {
+        height: auto;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: absolute;
+        top: 27vh;
+        left: 73vw;
+        ;
+    }
+    #oval{
+        top: 26.8vh;
+        left: 14vw;
+    }
+    #name{
+        top: 28vh;
+    }
+    /* #nname{
+        top: 26vh;
+    } */
 }
