@@ -29,22 +29,3 @@ session_start();
 <script src="script.js"></script>
 <script src="nscript.js"></script>
 </html>
-<?php
-include 'connection.php';
-
-if(isset($_POST['submit']))
-{
-    $id=$_POST['ide'];
-
-    $que="SELECT * FROM `game_app` WHERE `sl.no`='$id'";
-    $ge=mysqli_query($con,$que);
-    $opo=mysqli_fetch_assoc($ge);
-    if($opo)
-    {
-        $_SESSION['loggedin']=true;
-        $_SESSION['username']=$opo['name'];
-        header("location: new.php");
-    }
-}
-
-?>
