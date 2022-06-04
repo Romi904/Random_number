@@ -475,4 +475,7 @@ button:hover {
     .captcha_class{
         width: 29vw;
     }
+    #blur{
+        width: 29vw;
+    }
 }
