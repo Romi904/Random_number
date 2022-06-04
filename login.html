@@ -17,15 +17,21 @@ session_start();
     <div id="main">
         <div id="two">
         <p>Login Window</p>
-            <form id="form" action="" method="post">
+            <form id="form" action="new.html" method="post">
                 <i class="fa-solid fa-person-circle-plus rest"></i>
                 <label class="lab" for="nameee">Enter unique Id</label>
                 <input id="nameee" class="iclas" type="text" name="ide" placeholder="ex: 52" required>
+                <div id="cpbox">
+                    <input id="captcha_box" class="captcha_class" type="text" placeholder="enter captcha" maxlength="5" minlength="5" required>
+                    <input id="captcha" class="captcha_class" type="text" readonly>
+                </div>
                 <input id="cbutton" type="submit" name="submit" value="login">
+                <div id="blur"></div>
             </form>
         </div>
     </div>
 </body>
 <script src="script.js"></script>
+<script src="captcha.js"></script>
 <script src="nscript.js"></script>
 </html>

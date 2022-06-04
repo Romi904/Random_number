@@ -333,13 +333,47 @@ button:hover {
     position: relative;
     right: 3.5vw;
 }
+#cpbox{
+    margin-top: 10px;
+}
+#captcha{
+    user-select: none;
+    cursor:default;
+}
+#two p{
+    user-select: none;
+}
+#blur {
+    /* border: 1px solid red; */
+    background-color: #ff00000a;
+    width: 10vw;
+    height: 5vh;
+    position: absolute;
+    top: 52vh;
+    left: 50vw;
+    border-radius: 10px;
+    user-select: none;
+}
+.captcha_class{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    border: 2px dotted black;
+    outline: 1px groove #0fdd2b;
+    height: 5vh;
+    width: 10vw;
+    text-align: center;
+    background-color: #a6f34dc9;
+    border-radius: 12px;
+    color: rgb(65, 77, 245);
+    font-size: medium;
+    font-weight: 100;
+}
 /* MEDIA */
 @media only screen and (max-width: 420px) {
     #two {
         height: 50vh;
         width: 80vw;
     }
-
     #p {
         text-shadow: -1px -1px 0 rgb(238, 11, 11), 1px -1px 0 rgb(235, 252, 2), -1px 1px 0 rgb(40, 2, 255), 1px 1px 0 rgb(248, 2, 195);
     }
@@ -437,5 +471,8 @@ button:hover {
     }
     #nname{
         top: 27vh;
+    }
+    .captcha_class{
+        width: 29vw;
     }
 }
